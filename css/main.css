@@ -1,172 +1,160 @@
-/*
- * Ingresa el CSS del proyecto en este archivo
- */
+/* * Ingresa el CSS del proyecto en este archivo */
 * {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+}
+*:before,*:after {
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
   box-sizing: border-box;
 }
-
-*:before,
-*:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
 body {
-  margin: 0 auto;
-  font-size: 16px;
-  line-height: 1.71429;
-  font-family: 'Raleway', sans-serif;
+  margin:0 auto;
+  font-size:16px;
+  line-height:1.71429;
+  font-family:'Raleway',sans-serif;
   /* Establece la fuente de Google aquí */
-  background-color: #fff; /*#fff;*/
+  background-color:#fff;
+  /*#fff;*/
 }
-
 img {
-  vertical-align: middle;
+  vertical-align:middle;
 }
-
 a {
-  color: #373B47;
-  text-decoration: none;
+  color:#373B47;
+  text-decoration:none;
 }
-
 a:hover {
   color: #E95853;
 }
 /* nav */
 header {
-  position: fixed;
-  background: white;
-  width: 100%;
-  top: 0;
+  position:fixed;
+  background:white;
+  width:100%;
+  top:0;
 }
-
 .logo {
-  float: right;
+  float:right;
 }
-
 .menu {
-  padding: 14px 70px;
+  padding:14px 70px;
   overflow: auto;
 }
 /* home */
 #home {
-  background-image: url(../assets/images/bg-home.jpg); 
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 554px;
-  text-align: center;
-  margin-top: 80px;
+  background-image:url(../assets/images/bg-home.jpg);
+  background-position:center;
+  background-repeat:no-repeat;
+  background-size:cover;
+  height:554px;
+  text-align:center;
+  margin-top:80px;
 }
-
 #home .container {
-  color: white;
-  padding: 70px;
+  color:white;
+  padding:70px;
 }
-
 .text-home {
-  font-size: 53px;
+  font-size:53px;
 }
-
 .btn-home {
-  background: #2ecc71;
-  color: #fff;
-  padding: 11px 20px; 
-  border-radius: 1px;
-  font-weight: 500;
-  text-transform: uppercase;
-  margin-top: 63px;
-  display: inline-block;
+  background:#2ecc71;
+  color:#fff;
+  padding:11px 20px;
+  border-radius:1px;
+  font-weight:500;
+  text-transform:uppercase;
+  margin-top:63px;
+  display:inline-block;
   font-size: 14px;
 }
 /* 3 servicios */
 #services {
-  background-color: #f17c72;
-  text-align: center;
-  color: #fff;
-  padding: 70px 7px;
+  background-color:#f17c72;
+  text-align:center;
+  color:#fff;
+  padding:70px 7px;
 }
-
 .box-services {
-  display: inline-block;
-  width: 30%;
-  margin-top: 63px;
+  display:inline-block;
+  width:30%;
+  margin-top:63px;
 }
-
 .text-services {
-  font-size: 35px;
-  letter-spacing: 2px;
+  font-size:35px;
+  letter-spacing:2px;
 }
-
 .text-services02 {
-  width: 70%;
+  width:70%;
   margin: 0 auto;
 }
 /* work */
 #work {
-  background-color: white;
-  text-align: center;
-  width: 70%;
-  margin: 80px auto 0 auto;
-  /*background-image: url(../assets/images/hero.png); 
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 900px;
-  height: 925px;
-  */
+  background-color:white;
+  text-align:center;
+  width:70%;
+  margin:80px auto 0 auto;
+  /*background-image:url(../assets/images/hero.png);background-position:center;background-repeat:no-repeat;background-size:900px;height:925px;*/
 }
-
 .text-work {
-  font-size: 35px;
+  font-size:35px;
   letter-spacing: 2px;
 }
 /* galeria */
 #galeria {
-  background-color: white;
-  text-align: center;
-  width: 85%;
-  margin: 0 auto;
+  background-color:white;
+  text-align:center;
+  width:85%;
+  margin:0 auto;
+  padding-bottom:40px;
 }
-
+.text-galeria {
+  font-size:10px;
+  font-weight:bold;
+  padding:15px 0;
+}
 footer {
-  text-align: center;
-  height: 60px;
-  background-color: #373b47;
-  color: white;
-  padding-top: 17px; 
+  text-align:center;
+  height:60px;
+  background-color:#373b47;
+  color:white;
+  padding-top: 17px;
 }
 /*lightbox (fondo)*/
 #work-modal {
-  background-color: black;
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0;
+  background-color:rgba(135,193,117,0.8);
+  width:100%;
+  height:100%;
+  position:fixed;
+  top:0;
   left: 0;
 }
 /*lightbox (contenido)*/
 #work-modal .modal-body {
-  width: 60%;
-  margin: 0 auto;
-  background-color: blue;
-  text-align: center;
-  padding: 100px;
+  width:55%;
+  background-color:white;
+  text-align:center;
+  padding:15px;
+  margin:20px auto;
+  box-shadow: 5px 5px 70px 5px #333;
 }
 /*lightbox (boton cerrar)*/
 #work-modal .close {
-  position: absolute;
-  color: white;
-  top: 20px;
-  right: 20px;
-  width: 50px;
-  height: 50px;
-  background-color: red;
-  text-align: center;
+  z-index:1;
+  position:absolute;
+  /* funciona pero no de forma optima */
+  top: 5%;
+  right: 25%;
+  width: 30px;
+  height: 30px;
+  color:#2ecc71;
+  text-align:center;
+  font-weight:bolder;
+  font-size: 28px;
+  cursor: pointer;
 }
-
 .hide {
   display: none;
 }
