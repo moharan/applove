@@ -5,7 +5,7 @@
  //alert("existe");
  (function main(){
 	var boxes = Array.from(document.getElementsByClassName("box-services"));
-	var modal = document.getElementById("box-services-modal");
+	var modal = document.getElementById("work-modal");
 	var bodyModal, close, img;
 	boxes.forEach(function(box){
 		box.addEventListener("click", function(){
